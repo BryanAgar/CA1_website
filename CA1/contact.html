@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="icon" href="falcon.png">
+<noscript>To use this site, please enable JavaScript.</noscript>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="form.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src='myjs.js'> </script>
+
+  <style>
+    body {
+    font-family: 'Montserrat';font-size: 22px;
+}
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+      .LandbotLivechat {
+        left: 105px;
+    }
+
+    .LandbotPopup {
+        left: 105px;
+    }
+
+    .LandbotProactive {
+        left: 10px;
+    }
+
+    .LandbotFrame  {
+        left: 10px;}
+  </style>
+</head>
+<body>
+<!-- Makes Nav var fixed in postion throughout website -->
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Test.html">Final Year Project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Test.html">Home</a></li>
+        <li> <a href="Indepth.html">Detailed Stats</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+<div class="jumbotron">
+  <div class="container text-center">
+    <br>
+    <br>
+    <h1>Housing Data</h1>      
+    <p>Housing trend</p>
+    <br>
+  </div>
+</div>
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+  });
+</script>
+
+<div class="container" >  
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);">
+            
+            <div class="twelve row1">
+                <h1>Submit contact details</h1>
+            </div>
+
+            <div class="six row2a">
+                <h3>Name</h3>
+                <input type="text" name="firstname" id="firstName" placeholder="First Name" required>
+                <h5 class="error" id="firstNameError"></h5>
+            </div>
+            
+            <div class="six row2b">
+                <h3>Last name</h3>
+                <input type="text" name="lastname" id="lastName" placeholder="Last Name" required>
+                <h5 class="error" id="lastNameError"></h5>
+            </div>
+            <div class="six row2b">
+        
+            <div class="six row3a">
+                <h3>Email Address</h3>
+                <input type="text" id="email" name="email" required>
+                <h5 class="error" id="emailError" ></h5>
+                </div>
+            <div class="six row3a">
+                <h3>Job Title</h3>
+                <input type="text" id="jobtitle" name="jobtitle" required>
+                <h5 class="error" id="jobtitleError" ></h5>
+            </div>
+
+            
+            
+            <div class="six row6">
+                <h3>Data intrests</h3>
+                <select name="storytype" id="storytype" required>
+                    <option></option>
+                    <option value="domestic_news">Dublin City</option>
+                    <option value="international_news">South Dublin</option>
+                    <option value="business">North Dublin</option>
+                    <option value="politics">Fingal council</option>
+                    <option value="sports">Dundrum - DL</option>
+                    <option value="weather">South Dublin</option>
+                    <option value="interviews">Leinster region</option>
+                    <option value="opinion">Munster region</option>
+                    <option value="editorial">Ulster region</option>
+                    <option value="entertainment">Connacth region</option>
+                    <option value="horoscopes">House prices</option>
+                </select>
+                <h5 class="error" id="storytypeError" ></h5>
+            </div>
+            
+            <div class="twelve row7">
+                <h3>Feedback / suggestions</h3>
+                <textarea name="storytext" id="storytext" required></textarea>
+                <h5 class="error" id="storytextError" ></h5>
+            </div>
+            
+            <div class="six row8">
+            <a href="John_Tukey.jpg" download="proposed_file_name">
+                <input type="submit" id="submit" value="Submit"  required>
+                </a>
+                <input type="reset"  value="Reset">
+            </div>
+        </div>
+        </form>
+    
+    <!-- Start of HubSpot Embed Code -->
+<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9419669.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+    
+<br>
+<hr>
+<br>
+    <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+ 
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+    
+    </div>  
+    
+<div class="container-fluid bg-3 text-center">
+        <footer class="footer-basic">
+            <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+            <div> 
+            <a href='https://www.linkedin.com/in/bryanagar/'  target="_blank">
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:bryanagar1.com" target="_blank">
+            <ion-icon size="large" name="logo-google"></ion-icon>
+            </a>
+            
+            <a href='https://github.com/BryanAgar' target="_blank">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            </a>
+            <a href='https://twitter.com/AgarBryan' target="_blank">
+            <ion-icon size="large" name="logo-twitter"></ion-icon>
+            </a>
+            <a href='https://www.instagram.com/bryanagar/' target="_blank">
+            <ion-icon size="large" name="logo-instagram"></ion-icon>
+            </a>
+            </div>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="Test.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Indepth</a></li>
+                <li class="list-inline-item"><a href="History.html">About</a></li>
+                <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Bryan Agar © 2021</p>
+      </footer>
+    </div>
+    
+
+</body>
+</html>

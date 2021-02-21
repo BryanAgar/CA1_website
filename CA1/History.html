@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<noscript>To use this site, please enable JavaScript.</noscript>
+<script src='myjs.js'> </script>
+
+  <style>
+    body {
+    font-family: 'Montserrat';font-size: 22px;
+}
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+        
+    }
+    .LandbotLivechat {
+        left: 105px;
+    }
+
+    .LandbotPopup {
+        left: 105px;
+    }
+
+    .LandbotProactive {
+        left: 10px;
+    }
+
+    .LandbotFrame  {
+        left: 10px;}
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </style>
+</head>
+<body>
+<link rel="icon" href="falcon.png">
+<!-- Makes Nav var fixed in postion throughout website -->
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Test.html">Final Year Project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Test.html">Home</a></li>
+        <li> <a href="Indepth.html">Detailed Stats</a></li>
+        <li class="active"><a href="History.html">History</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+<div class="jumbotron">
+  <div class="container text-center">
+    <br>
+    <br>
+    <h1>Housing Data</h1>      
+    <p>Data Viz History</p>
+    <br>
+  </div>
+</div>
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-826045-062XD1QMS29P8UXY/index.json',
+  });
+</script>
+
+<div class="container">    
+  <h3><b><em>How,Who,What is behind it?</em></b></h3><br>
+  <div class="row">
+    
+   
+    </div>
+    <div class="col">
+        <p>Data visualization was only recognized as a branch of statistics after a professor named John W Tukey wrote a historical paper called ‘The Future of Data Analysis’. In this paper he called for data visualization to be recognized in the legitimate branch of statistics and not just simply a part of mathematics.
+<br>
+<br>
+        After publication of this paper he began to invent a wide variety of new, simple and effective graphic displays, under the name of “Exploratory Data Analysis” (EDA) <br><br>These include many diagrams we know today such as - stem-leaf plots, box plots, hanging rootograms, two-way table displays to name a few examples. Many of his graphics have now entered the statistical vocabulary and are included in visualization and statistical software implementation today.   
+
+</p>
+<p>
+      Since the creation of data visualization from mapping out the sun position for ancient burial grounds to the now more advanced methods, John W Tukey was the fire that ignited innovation in this field. 
+<br><br>
+Since 1977 to the 21th century it has rapidly increased, helped by through the development of programming languages such as C which was created by Bell labs in 1994.
+<br><br>
+Software development in large-scale statistical and graphics software engineering projects in the private sector such as SAS and open source developments such as the R project have led to rapidly increased innovation, technology and computing power. This in turn has to increased interest and applications being developed in the that exploit the power of data visualization 
+  
+        
+</p>
+<br>
+<hr>
+
+<br>
+    </div>
+    <div id='historybox' class="row">
+        
+    <div class="col-sm-4">
+        
+        <H3>John W Turkey</H3>
+        <br>
+      <img id='john' src="John_Tukey.jpg"/>
+      
+    </div>
+    <div id='historybox'class="col-sm-4"> 
+    <br>
+    <br>
+    
+      <p>John Wilder Tukey (June 16, 1915 – July 26, 2000) was an American mathematician best known for development of the Fast Fourier Transform (FFT) algorithm and box plot.
+    <br>
+    <br>
+        The Tukey range test, the Tukey lambda distribution, the Tukey test of additivity, and the Teichmüller–Tukey lemma all bear his name. He is also credited with coining the term 'bit'.   
+
+</p>   
+    </div>
+    <div id='historybox' class="col-sm-4">
+        <br>
+<br>
+     <p>He was awarded the National Medal of Science by President Nixon in 1973. He was awarded the IEEE Medal of Honor in 1982 "For his contributions to the spectral analysis of random processes and the fast Fourier transform (FFT) algorithm".</p>
+    </div>
+        </div><hr>
+    <br>
+
+    <div class="col text-center">
+        <h1>History behind data visualization</h1>
+        <br>
+<iframe width="950" height="500" src="https://www.youtube.com/embed/lR8NWQnApwE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+    <br>
+  <div class="container-fluid bg-3 text-center">
+        <footer class="footer-basic">
+             <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+            <div> 
+            <a href='https://www.linkedin.com/in/bryanagar/'  target="_blank">
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:bryanagar1.com" target="_blank">
+            <ion-icon size="large" name="logo-google"></ion-icon>
+            </a>
+            
+            <a href='https://github.com/BryanAgar' target="_blank">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+            </a>
+            <a href='https://twitter.com/AgarBryan' target="_blank">
+            <ion-icon size="large" name="logo-twitter"></ion-icon>
+            </a>
+            <a href='https://www.instagram.com/bryanagar/' target="_blank">
+            <ion-icon size="large" name="logo-instagram"></ion-icon>
+            </a>
+            </div>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="Test.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Indepth</a></li>
+                <li class="list-inline-item"><a href="History.html">About</a></li>
+                <li class="list-inline-item"><a href="trends.html">Trends</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Bryan Agar © 2021</p>
+      </footer>
+    </div>
+
+</body>
+</html>
